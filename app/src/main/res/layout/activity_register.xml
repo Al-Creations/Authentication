@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tagihan_fragment"
+    android:background="@drawable/backgorund_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="15dp"
+        android:background="@drawable/kotakan_google"
+        android:id="@+id/activity_register">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/teal_200"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hi! You need register to enter"
+            android:gravity="center"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/grey"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fullname"
+            android:layout_marginBottom="24dp"
+            app:startIconDrawable="@drawable/ic_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:hint="Email"
+            app:startIconDrawable="@drawable/ic_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:startIconDrawable="@drawable/ic_password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txPasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0/15"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/teal_200"
+                android:gravity="end" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Register"
+            android:id="@+id/btnRegister"
+            android:backgroundTint="@color/teal_200"/>
+
+    </LinearLayout>
+</RelativeLayout>
